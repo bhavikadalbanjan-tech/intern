@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form page</title>
+        <style>
+             * {
+            margin: 2px;
+            padding: 2x;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+            fieldset{
+                background-color: antiquewhite;
+                padding: 5px;
+                margin: 2px;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Form </legend>
+            <label for="firstname">firstname</label><br>
+            <input type="text" id="firstname"  autofocus><br>
+            <label for="lname">lastname</label><br>
+            <input type="text" id="lname" ><br>
+            <input type="submit" id="submit"><br><br>
+
+            <label for="sem">Semester</label>
+            <input list="Choose1" name="Choose1">
+            <datalist id="Choose1">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                </datalist>
+            <br><br>
+
+            <label for="dept">Choose Department</label><br>
+            <input type="radio" name="cd" id="dept" value="BCA">
+            <label for="dept">BCA</label><br>
+            <input type="radio" name="cd" id="dept" value="MCA">
+            <label for="dept">MCA</label><br>
+            <input type="radio" name="cd" id="dept" value="BCOM">
+            <label for="dept">BCOM</label><br>
+            <input type="radio" name="cd" id="dept" value="MCOM">
+            <label for="dept">MCOM</label><br><br>
+
+            
+
+            <label for="game">Select Games</label><br>
+            <input type="checkbox" name="select_game1" id="100mt">
+            <label for="100mt">100mt race</label><br>            
+            <input type="checkbox" name="select_game2" id="200mt">
+            <label for="200mt">200mt race</label><br><br>
+
+            <button type="submit" onclick="alert('submit data')" formnovalidate="formnovalidate">Submit</button>
+        </fieldset>
+     </form>
+
+     <video width="400" controls>
+        <source src="C:\bhavu\video1.mp4" type="video/mp4">
+         
+         Your browser does not support the audio element.
+
+         
+     </video>
+     <iframe width="420" height="315"
+src="https://www.youtube.com/embed/p3sL13x70I8?">
+
+     </iframe>
+    </body>
+    </html>

@@ -1,0 +1,32 @@
+/*body{
+ background-image: url(../pngtree-a-background-of-orange-blue-and-yellow-gradients-with-gritty-appearance-image_16233934.jpg); 
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 100vh;
+ background-size: cover;
+ background-origin: padding-box;
+}*/
+#ex1{
+    border: 5px dotted black;
+    border-start-start-radius: 100px;
+    padding-inline-start: 50px;
+    background-color: aqua;
+    background-clip:content-box;
+    
+}
+
+#ex2{
+    border: 5px dotted black;
+    padding: 25px;
+    background-color: aqua;
+    background-clip:border-box;
+    border-end-end-radius: 100px;
+}
+#ex3{
+    border: 5px dotted black;
+    padding: 25px;
+    background-color: aqua;
+    background-clip:padding-box;
+margin-left: inherit;
+    border-start-end-radius: 100px;
+}

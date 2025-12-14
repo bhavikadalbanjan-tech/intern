@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trafalgar</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            max-width: 100vw;
+            height: 100vh;
+        }
+        .main1{
+            
+            padding: 50px 100px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .link{
+            display: flex;
+        }
+        .link ul{
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+            align-items: center;
+            color: grey;
+        }
+/* content */
+        .content{
+            display: flex;
+            align-items: center; 
+             
+        }
+        .content1{
+          width: 100%;   
+        }
+        .c1{   
+            font-size: xx-large;  
+        }
+        .c2{
+                margin-top: 10px;
+                color: gray;
+        }
+        .btn1{
+            width:116px;
+            height: 30px;
+            margin-top: 20px;
+            background-color: blue;
+            color: white;
+            border: 0;
+            border-radius: 25px;
+        }
+        .image{
+             width: 100%;
+             display: flex;
+            align-items: center;
+            justify-content: end;   
+        }
+        .image img{
+             max-width: 400px;
+            max-height: 400px;
+        }
+        /* services page */
+        .container1{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        .container3{
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: xx-large;
+        }
+        .container4{
+            text-align: center;
+            color: grey;
+            max-width: 80%;
+            margin: 0px auto;
+            
+        }
+        
+        .service1{
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .card1,.card2,.card3{
+            border-radius: 25px;
+            border: 1px solid rgb(193, 191, 191);
+            background-color: rgb(255, 252, 252);
+            padding: 45px;
+            box-shadow: 10px 40px 50px 0px #E5E9F666;
+
+        }
+        .image1,.image2,.image3{
+           
+            margin-bottom: 21px;
+        }
+        .c3{
+            margin-bottom: 10px;
+        }
+
+        .btn2{
+           background-color: blue; 
+           margin-top: 25px;
+           color: white;
+           border: 0;
+            border-radius: 25px;
+            height: 30px;
+            width: 100px;
+        }
+        /* landing page */
+        .landingpage{
+            display: flex;
+            align-items: center; 
+            flex-direction: row-reverse; 
+            gap: 150px;
+            margin-top: 100px;
+        }
+        .landing1{
+          width: 100%;   
+        }
+        .l1{   
+            font-size: xx-large;   
+        }
+        .l2{
+                margin-top: 10px;
+                color: gray;
+        }
+        .btn3{
+            width:116px;
+            height: 30px;
+            margin-top: 20px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: 2 px solid skyblue;
+            border-radius: 25px;
+            
+        }
+        .landingimg{
+             width: 100%;
+             display: flex;
+            align-items: center;
+            justify-content: end;   
+        }
+        .landingimg img{
+             max-width: 400px;
+            max-height: 400px;
+        }
+
+        /* downloadpage */
+
+.content{
+            margin: 100px;
+            display: flex;
+            align-items: center; 
+             
+        }
+        .content1{
+          width: 100%;   
+        }
+        .c1{   
+            font-size: xx-large;   
+        }
+        .c2{
+                margin-top: 10px;
+                color: gray;
+        }
+        .btn1{
+            width:116px;
+            height: 30px;
+            margin-top: 20px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            border: 2px solid skyblue;
+            border-radius: 25px;
+        }
+        .downloadimg{
+             width: 100%;
+             display: flex;
+            align-items: center;
+            justify-content: end;   
+        }
+        .downloadimg img{
+             max-width: 400px;
+            max-height: 400px;
+        }
+
+        /* card4 */
+
+        .card4{
+            background-color:rgb(138, 211, 248);background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+            padding: 20px;
+            border-radius: 20px;
+            margin: 60px;
+           
+        }
+        .heading{
+            text-align: center;
+            color: white;
+            font-size: xx-large
+        }
+        .content2{
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+        .content3{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            justify-content: center;
+        }
+        .c5{
+            width:auto;
+            text-align: start;
+        } 
+        .content4{
+            margin-top: 35px;
+            font-size: large;
+        }
+        .c6{
+            width: 100%;
+        }
+
+        /* artical page */
+
+            .articalpage{
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                align-items: center;
+            }
+        .c7{
+            align-items: center;
+            font-size: x-large;
+        }
+
+        /* artical page */
+
+        .artical1{
+            display: flex;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .card7,.card5,.card6{
+            border-radius: 25px;
+            border: 1px solid rgb(193, 191, 191);
+            background-color: rgb(255, 252, 252);
+            box-shadow: 10px 40px 50px 0px #E5E9F666;
+
+        }
+        
+        .content6{
+            padding: 20px;
+        }
+        .c9{
+            margin-top: 10px;
+        }
+        .btn2{
+           background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    border-radius: 35px;
+    height: 30px;
+    width: 100px;
+        }
+        /* footer */
+        footer{
+            width: 100%;
+            background-color:rgb(138, 211, 248);background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+            color: white;
+        }
+        .main4{
+            display: flex;
+            padding: 40px;
+            gap: 200px;
+             
+        }
+        .boxmain{
+            display: flex;
+           gap: 135px;
+            align-items: center;
+            justify-content: center;
+        }
+        .con3{
+            display: flex;
+            flex-direction: column;
+        }
+        .con3 ul{
+            list-style-type: none;
+        }
+        .con > ul > li{
+            margin-bottom: 5px;
+        } 
+
+        /* responsive page */
+        @media (max-width: 1024px){
+            .main1{
+                padding: 50px 40px;
+            }
+            
+    .content,
+    .landingpage{
+        gap: 50px;
+    }
+
+    .service1{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card1,.card2,.card3{
+        width: 45%;
+    }
+            
+        }
+        @media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .link ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Hero sections */
+    .content,
+    .landingpage{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image,
+    .landingimg,
+    .downloadimg{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    /* Services */
+    .service1{
+        flex-direction: column;
+    }
+
+    .card1,.card2,.card3{
+        width: 100%;
+    }
+
+    /* Article cards */
+    .artical1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Footer */
+    .main4{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .boxmain{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+@media (max-width: 480px){
+
+    h1, .c1, .l1{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .btn1,.btn2,.btn3{
+        width: 100%;
+        max-width: 200px;
+        margin: 20px auto;
+    }
+}
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main1"> 
+            <!-- navbar -->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./logo.png" alt="logo">
+                </div>
+                <div class="link">
+                    <ul>
+                        <li style="color: black;">Home</li>
+                        <li>Find a desktop</li>
+                        <li>Apps</li>
+                        <li>Testimonials</li>
+                        <li>About us</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="content">
+                <div class="content1">
+                <div class="c1">
+                    <pre style=" font-family: Mulish;"><b>Virtual healthcare 
+for you</b></pre>
+                </div>
+                <div class="c2">
+                    <pre style=" font-family: Mulish;">Trafalgar provides progressive, and affordable 
+healthcare, accessible on mobile and online 
+for everyone</pre>
+                </div>
+                <button class="btn1">Consult Today</button>
+                </div>
+                 <div class="image">
+                <img src="./illustration.png" height="100%" width="100%">
+            </div>
+            </div>
+
+           <!--  our services page -->
+             <div class="container1">
+                <div class="container2">
+                    <div class="container3"><p style=" font-family: Mulish;"><b>Our Services</b></p></div>
+                    <div class="container4"><p style=" font-family: Mulish;">We provide to you the best choiches for you. Adjust it to your health needs 
+                        and make sure your undergo treatment with our highly qualified doctors you can 
+                        consult with us which type of service is suitable for your health</p></div>
+                </div>
+                <div class="container5">
+                    <div class="service1">
+                    <div class="card1">
+                        <div class="image1 ">
+                            <img src="./frame.png" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="c3">
+                            <p style=" font-family: Mulish;"><b >Search doctor</b></p>
+                        </div>
+                        <div class="c4">
+                            <pre style=" font-family: Mulish;">Choose your doctor from thousands 
+of specialist, general, and trusted
+hospitals</pre>
+                        </div>
+                    </div>
+
+                     <div class="card2">
+                        <div class="image2">
+                            <img src="./frame_1.png" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="c3">
+                            <p style=" font-family: Mulish;"><b>Online pharmacy</b></p>
+                        </div>
+                        <div class="c4">
+                            <pre style=" font-family: Mulish;">Buy  your medicines with our
+mobile application with a simple
+delivery system</pre>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="image3">
+                            <img src="./frame_2.png" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="c3">
+                            <p style=" font-family: Mulish;"><b>Consultation</b></p>
+                        </div>
+                        <div class="c4">
+                            <pre style=" font-family: Mulish;">Free consultation with our trusted 
+doctors and get the best 
+recomendations</pre>
+                        </div>
+                    </div>
+
+                   
+                    </div>
+
+                    <div class="service1">
+                    <div class="card1">
+                        <div class="image1">
+                            <img src="./frame_4.png" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="c3">
+                            <p style=" font-family: Mulish;"><b>Details info</b></p>
+                        </div>
+                        <div class="c4">
+                            <pre style=" font-family: Mulish;">Free consultation with our trusted 
+doctors and get the best 
+recomendations</pre>
+                        </div>
+                    </div>
+                     <div class="card2">
+                        <div class="image2">
+                            <img src="./frame_5.png" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="c3">
+                            <p style=" font-family: Mulish;"><b>Emergency care</b></p>
+                        </div>
+                        <div class="c4">
+                            <pre style=" font-family: Mulish;">You can get 24/7 urgent care for 
+yourself or your children and your
+lovely family</pre>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="image3">
+                            <img src="./group.png" style="width: 50px; height: 50px;">
+                        </div>
+                        <div class="c3">
+                            <p style=" font-family: Mulish;"><b>Tracking</b></p>
+                        </div>
+                        <div class="c4">
+                            <pre style=" font-family: Mulish;">Track and save your medical history 
+and health data </pre>
+                        </div>
+                    </div>
+
+                   
+                    </div>   
+                </div>
+                <div>
+                    <button class="btn2">Learn More</button>
+                </div>
+             </div>
+
+             <!-- landing page  -->
+              <div class="landingpage">
+                <div class="landing1">
+                <div class="l1">
+                    <pre style=" font-family: Mulish;"><b>Leading healthcare 
+providers</b></pre>
+                </div>
+                <div class="l2">
+                    <pre style=" font-family: Mulish;">Trafalgar provides progressive, and affordable 
+healthcare, accessible on mobile and online 
+for everyone</pre>
+                </div>
+                <button class="btn3">Learn More</button>
+                </div>
+                 <div class="landingimg">
+                <img src="./trafalgar-illustration sec02 1.png" height="100%" width="100%">
+            </div>
+            </div>
+
+            <!-- download -->
+            <div class="content">
+                <div class="content1">
+                <div class="c1">
+                    <pre style=" font-family: Mulish;"><b>Download our 
+mobile apps</b></pre>
+                </div>
+                <div class="c2">
+                    <pre style=" font-family: Mulish;">Our dedicated patient engagement app and 
+web portal allow you to access information 
+instantaneously (no tedeous form, long calls, 
+or administrative hassle) and securely</pre>
+                </div>
+                <button class="btn1">Download</button>
+                </div>
+                 <div class="downloadimg">
+                <img src="./trafalgar-illustration sec03 1.png" height="100%" width="100%">
+            </div>
+            </div>
+
+            <!-- card4 -->
+            <div class="card4">
+                <div class="heading">
+                    <b style=" font-family: Mulish;">What our customer are saying</b>
+                </div>
+                <div class="content2">
+                    <div class="content3">
+                <div class="imgr">
+                    <img src="./group_5.png" alt="">
+                </div>
+                <div class="c5">
+                    <p style=" font-family: Mulish;">Edward Newgate</p>
+                    <p style=" font-family: Mulish;">Founder Circle</p>
+                </div>
+                </div>
+                <div class="content4">
+                    <pre class="c6" style=" font-family: Mulish;">
+“Our dedicated patient engagement app and 
+web portal allow you to access information 
+instantaneously (no tedeous form, long calls, 
+or administrative hassle) and securely”
+                    </pre>
+                </div>
+                </div>
+            </div>
+
+            <!-- Artical page -->
+             <div class="articalpage">
+                <div class="c7">
+                    <p style=" font-family: Mulish;"><b>Check out our latest article</b></p>
+                </div>
+                
+                <div class="artical1">
+                    <div class="card7">
+                        
+                        <div class="image4 ">
+                            <img src="./mask_group.png" style="width: 350px; height: 240px;">
+                        </div>
+                        <div class="content6">
+                        <div class="c8">
+                            <pre style=" font-family: Mulish;"><b>Disease detection, check 
+up in the laboratory</b></pre>
+                        </div>
+                        <div class="c9">
+                            <pre style=" font-family: Mulish;">In this case, the role of the health 
+laboratory is very important to do
+a disease detection...</pre>
+                        </div>
+                        </div>
+                    </div>
+
+                     <div class="card5">
+                        <div class="image5">
+                            <img src="./mask_group_1.png" style="width: 350px; height: 240px;">
+                        </div>
+                            <div class="content6">
+                        <div class="c8">
+                            <pre style=" font-family: Mulish;"><b>Herbal medicines that are 
+safe for consumption</b></pre>
+                        </div>
+                        <div class="c9">
+                            <pre style=" font-family: Mulish;">Herbal medicine is very widely used 
+at this time because of its very good 
+for your health...</pre>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card6">
+                        <div class="image6">
+                            <img src="./mask_group_2.png" style="width: 350px; height: 240px;">
+                        </div>
+                        <div class="content6">
+                        <div class="c8">
+                            <pre style=" font-family: Mulish;"><b>Natural care for healthy 
+facial skin</b></pre>
+                        </div>
+                        <div class="c9">
+                            <pre style=" font-family: Mulish;">A healthy lifestyle should start from 
+now and also for your skin health.
+There are some...</pre>
+                        </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <div>
+                        <button class="btn2">View All</button>
+                    </div>
+             </div>
+        </div>
+        <footer>
+            <div class="main4">
+                <div class="box1">
+                <div class="img2">
+                    <img src="./logo.png" alt="">
+                </div>
+                <div class="con1">
+                    <pre style=" font-family: Mulish;">Trafalgar provides progressive, and affordable 
+healthcare, accessible on mobile and online 
+for everyone
+                    </pre>
+                </div>
+                <div class="con2">
+                    <p style=" font-family: Mulish;">©Trafalgar PTY LTD 2020. All rights reserved</p>
+                </div>
+                </div>
+                <div class="boxmain">
+              
+                    <div class="con3">
+                        <ul>
+                            <li><b>Compnay</b></li>
+                            <li>About</li>
+                            <li>Testimonials</li>
+                            <li>Find a doctor</li>
+                            <li>Apps</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="con3">
+                        <ul>
+                            <li><b>Region</b></li>
+                            <li>Indonesia</li>
+                            <li>Singapore</li>
+                            <li>Hongkong</li>
+                            <li>Canada</li>
+                        </ul>
+                    </div>
+                
+                <div class="con3">
+                     <ul>
+                            <li><b>Help</b></li>
+                            <li>Help center</li>
+                            <li>Contact support</li>
+                            <li>Instructions</li>
+                            <li>How it works</li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+        </footer>
+        </div>
+</body>
+</html>
+

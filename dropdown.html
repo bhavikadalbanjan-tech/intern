@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <style>
+        .dropdown{
+            position: relative;
+        }
+        .drophover{
+            display: none;
+            position: absolute;
+            min-width: 60px;
+            padding: 14px,12px;
+            background-color: azure;
+        }
+        .dropdown:hover .drophover{
+            display: block;
+        }
+
+        .dropdown1{
+            position: relative;
+        }
+        .dpbtn{
+            background-color: aquamarine;
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            background-color: azure;
+        }
+        .dropdown-content a{
+            background-color: aliceblue;
+            color: black;
+            display: block;
+            padding: auto;
+        }
+        .dropdown-content:hover{
+            background-color:cyan;
+        }
+        .dropdown1:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown1:hover .dpbtn{
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="dropdown">
+        hover hear
+        <div class="drophover">
+            hello
+        </div>
+    </div>
+    <p></p>
+<p></p>
+    <div class="dropdown1">
+        <button class="dpbtn" >dropdown</button>
+        <div class="dropdown-content">
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+        </div>
+
+    </div>
+    
+</body>
+</html>
